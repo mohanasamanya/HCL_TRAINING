@@ -5,14 +5,14 @@ using namespace std;
 int main() {
     int n=5;
     int arr[n];
-    int low = 0;
-    int high = n;
+    int pos = 1;
+    int neg = -1;
     for(int i=0;i<n;i++){
         if(i%2==0){
-            arr[i]=high--;
+            arr[i]=neg--;
         }
         else{
-            arr[i]=low++;
+            arr[i]=pos++;
         }
     }
     for(int i = 0;i<n;i++){
